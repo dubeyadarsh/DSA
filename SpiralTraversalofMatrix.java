@@ -16,8 +16,8 @@ class Solution
 	  int count=0;
 	  while(count<tot){
 	      //top wall
-	      for(int i=minc, j=minr;i<=maxc && count<tot;i++){
-	       //   System.out.println(a[j][i]);
+	      for(int j=minc, i=minr;j<=maxc && count<tot;j++){
+	       //   System.out.println(a[i][j]);
 	           count++;
 	          if(count==k) return a[j][i];
 	      }

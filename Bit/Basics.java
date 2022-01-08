@@ -46,4 +46,10 @@ count+=(num>>i)&1);
 // 		 For shortcut -->
 // 		 'a' ='A' | ' ' ;    Or operation of uppercase char to blank space convert into lowercase
 // 		 'A'='a'  & '_';   it will convert lowercase char into upper case
-                 
+       
+		 
+// How to clear LSB? .. unset every element till ith index from right;
+	ans=a&(~((1<<i+1)-1));	 
+// How to clear MSB? .. unset every element till ith index from left;
+	ans=a&((1<<i+1)-1);	  
+		 

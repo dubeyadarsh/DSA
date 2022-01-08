@@ -1,3 +1,5 @@
+// Length of binary is :
+len=(Math.log(N)/Math.log(2))+1;
 // To print binary representation of number
           //aap kisi bhi number k binary ko agar 5 baar right shift karte ho aur phir 1 se &
 			  //karte ho to wo 5th index pe konsa bit tha wo return karta hai 

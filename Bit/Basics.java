@@ -55,3 +55,5 @@ count+=(num>>i)&1);
 // How to clear MSB? .. unset every element till ith index from left;
 	ans=a&((1<<i+1)-1);	  
 		 
+// XOR Property ----->
+// 		 a^b^c=A^c^b=C^a^b

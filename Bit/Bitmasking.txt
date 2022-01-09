@@ -1,0 +1,13 @@
+// BitMasking is type of mask that used to encode the array . Bitmasking most of the time used when question is related to subset or whenu need to have a intersection between 2 arrays
+If size of array is n then size of bitmask will also be n
+     [5,2,6] for this example bitmask will be-->    here n is 3 so no of bitmask will be 2^n
+  0-> 0,0,0 ,--> It represent empty subset
+  1-> 0,0,1 ,--> It represent [6]
+  2-> 0,1,0 ,--> It represent [2]
+  3-> 0,1,1 ,--> It represent [2,6]
+  4-> 1,0,0 ,--> It represent [5]
+  5-> 1,0,1 ,--> It represent [5,6]
+  6-> 1,1,0 ,--> It represent [5,2]
+  7-> 1,1,1 ,--> It represent [5,2,6]
+  
+  Run for loop 2^n times and inside that run for loop n times to do operation with every bit of mask.

@@ -1,5 +1,7 @@
 *Difference array is quite like prefixSum array.
+
 *In the prefixSum array, prefixSum[i] is the sum of index 0 to index i - 1 in original array.
+
 *In the difference array, diff[i] is the difference of index i and index i - 1 in original array.*
 
 

@@ -1,6 +1,6 @@
 // 2134. Minimum Swaps to Group All 1's Together II
-window ka size total number of 1 k bararbar hoga kyuki hum sabko sath me rakhna chahta jiska matlab window me sab 1 hone chahiye
-kisi bhi window me minimum number of zero jo hoga woi answer hoga
+// window ka size total number of 1 k bararbar hoga kyuki hum sabko sath me rakhna chahta jiska matlab window me sab 1 hone chahiye
+// kisi bhi window me minimum number of zero jo hoga woi answer hoga
 class Solution {
     public int minSwaps(int[] nums) {
         int n=nums.length;

@@ -48,6 +48,7 @@
 
 
 // ************Optimised Approach******************
+// Find the middle of likedlist and reverse linkedlist onwards  from mid ......seprate both part
 class Solution {
     ListNode reverse(ListNode head){
         ListNode prev=null,curr=head,nxt;

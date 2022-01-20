@@ -13,8 +13,11 @@ https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
 
 List =[2,3,5,7,11,13,17,19]
 create a mask in which at index(element in list) will be set bit .. Using this property 665772 has been formed
+
 int mask=0;
+
 for(element in list){
+
 mask|=1<<(list[i])
 
 After above operation value of mask become 665772

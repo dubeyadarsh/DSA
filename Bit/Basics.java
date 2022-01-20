@@ -1,4 +1,4 @@
-// Choose 1 number that contains all st bit in it?
+// Choose 1 number that contains all set bit in it?
 //  Number is -1 
 
 // How positive or Negative value stored in computer memory ?

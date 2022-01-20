@@ -1,3 +1,14 @@
+// Choose 1 number that contains all st bit in it?
+//  Number is -1 
+
+// How positive or Negative value stored in computer memory ?
+// 	in java int has 4 byte capacity i.e, 32 bit
+// 	 e.g, 4 bit number can store at max value is 2^4-1(15) . 15 is biggest number that can formed using 4 bit .
+// 	so the right most range of integer should be (2^32-1)... But thrill is left most bit is considered for sign that's why rightmost range of integer is (2^31-1)
+// 	if u inisitialize int as unsigned then max range will be 2^32-1 but by default int in java is signed
+	
+// 	positive value directly satored in computer but when it omes it to negative value it got convert into 2's compliment then it stored in memory
+
 // Length of binary is :
 len=(Math.log(N)/Math.log(2))+1;
 // To print binary representation of number

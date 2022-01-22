@@ -1,0 +1,25 @@
+// 287. Find the Duplicate Number
+// less optimised and straigh forward approach 
+
+
+// The key idea is to always map the number at index 0 to its equivalent index. While in the recursive approach, we directly jump to the next index, in this approach, we will bring the number from the next index to index 00 and continue from there (effectively performing a swap).
+
+class Solution {
+    public int findDuplicate(int[] nums) {
+        int n=nums.length;
+        int ans=0;
+        while(true){
+            int p=nums[0];
+             if (nums[p]==p){
+                 ans=p;
+                  break;
+             }
+            nums[0]=nums[p];
+            nums[p]=p;
+            
+        }
+        return ans;
+    }
+}
+
+ Best approach watch the  bitwise solution in leetcode article

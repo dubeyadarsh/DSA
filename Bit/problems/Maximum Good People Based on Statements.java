@@ -1,3 +1,6 @@
+// 2151. Maximum Good People Based on Statements
+
+
 // **Disclaimer: If you don't know how to represent subset using bitwise then don't look into solution , you only be frustrated **
 // I considered all the possible assumption and then tried to validate these assumption from statement table.
 // E.g, [[2,1,2],[1,2,2],[2,0,2]]

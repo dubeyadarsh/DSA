@@ -1,6 +1,8 @@
 // Choose 1 number that contains all set bit in it?
 //  Number is -1 
 
+//  String bits = Integer.toBinaryString(n);
+
 // How positive or Negative value stored in computer memory ?
 // 	in java int has 4 byte capacity i.e, 32 bit
 // 	 e.g, 4 bit number can store at max value is 2^4-1(15) . 15 is biggest number that can formed using 4 bit .

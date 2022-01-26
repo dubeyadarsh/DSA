@@ -21,4 +21,4 @@ for(element in list){
 mask|=1<<(list[i])
 
 After above operation value of mask become 665772
-<!--  -->this was great
+<!--  -->

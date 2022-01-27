@@ -125,3 +125,43 @@ public class StaticDemo {
         s2.getStudentInfo();
     }
 }
+
+// ********nested class*******
+package oops;
+
+public class MainClass {
+
+    public static void main(String[] args) {
+        System.out.print("Hello I'm Monst!");
+        // person p1 = new person();
+        person.inner p2 = new person().new inner();
+        p2.move();
+        person.Demo p1 = new person.Demo();
+        p1.move2();
+    }
+}
+
+class person {
+    String name;
+    static int count;
+
+    static class Demo {
+        // inner static class can acess outer static variable and can't access outer non
+        // static variable
+        void move2() {
+            System.out.println("nahi chalra");
+        }
+    }
+
+    class inner {
+        int a, b;
+
+        void move() {
+            System.out.println("chalra");
+        }
+    }
+
+    void print() {
+        System.out.println("Aur lodu " + name + " " + count);
+    }
+}

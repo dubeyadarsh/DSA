@@ -1,3 +1,7 @@
+https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
+
+
+
 When we have to find bitwise &  in some range like, find bitwise & in [5,7] then instead of finding & of every member we have another approach
 i.e, --> find the common prefixe from 5 and 7
    0 1 0 1

@@ -1,0 +1,3 @@
+PriorityQueue is minheap by default in Java
+you can pass this comparator (Colections.reverseOrder()) to priorityQueue Constructor, then it will work as maxheap
+u can create your own comparator to decide the prioriy in queue

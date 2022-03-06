@@ -1,0 +1,23 @@
+Considering index is starting from 1-->
+left child present at -> 2*i
+right child present at -> 2*i+1
+parent present at -> [i/2]
+leaf node will be froim {n/2}+1....n ;
+
+ **********Morris Traversal or Threaded VBinary Tree***************
+Using this traversal we can access the parent node from child node..
+
+InOrder Morris traversal--->
+         *  Right subtree ki taraf kab gya jab left exist nahi karta...
+         *  Right subtree ki taraf kb jaunga jab left subtree completely traversed ho chuki ho...
+
+Find Binary Tree from Inorder and Preorder traversal
+    --> in this case first we need to build left subtree then right subtree
+find binary search tree form inorder and postorder traversal
+   --> in this case first we need to build right subtree then go for left subtree
+
+
+To revise top and bottom view of tree .. we need to know the vertical traversal using line..
+for more info open our solution on gfg for top view (In that solution we need not to use for loop in while.. i did becoz i was noob)
+Basically this use concept of vertical line.....
+           (Agar phir bhi na smjhe to Striver ka top view of tree ka video dekh lo)

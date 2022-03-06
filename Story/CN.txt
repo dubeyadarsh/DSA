@@ -1,0 +1,134 @@
+..1) CN --> Connection between many different different device to share the data is Computer Network.
+
+
+***********Some important terms *********
+ 1) Client --> who accepts data from server
+  2) Server---> Who serves data to client
+  3) Peer ---> object that shares or exchage data *(both client and server can be peer)
+  4)Host ---> A computer device who do server offering information
+ 5)  bandwidth:- Network bandwidth is a measurement indicating the maximum capacity of a wired or wireless 
+                         communications link to transmit data over a network connection in a given amount of time.
+ 6)VoIP: Voice over internet protocol (VoIP) converts your voice into data so that it can be transmitted in the aforementioned packets over the internet. 
+                   Your voice is broken down into data packets and transmitted across the internet to its destination—the receiver of your call.
+  7)Jitter: It is when there is a time delay in the sending of these data packets over your network connection\
+  8)Packets:-In networking, a packet is a small segment of a larger message.   
+  9) Frame:- Packet can also be brokendown into frame. frae consist of header, tailer and some data 
+  10) Web vs Internet --> Web can be accessed through internet . Web stores informatiion  Alternatively, the Internet can be viewed as a big book-store 
+                                   while the Web can be viewed as collection of books on that store.
+
+
+
+2) Interprocess Communication --> Deal with OS --> Inside Computer prcoess send by input device and process receive by output device
+
+Communication is of 2 types --->
+                                             1) Point to point (two computer connected tgrough single cable)
+                                             2) Multipoint (Many computer can be connected through single cable using divider)
+
+** there should be some protocol at receiver end to understand data sent by sender.
+--> Client and server is seprated but CN make it feels kike it is in same system
+
+-- Functionality in CN
+ i) Mandatory -->
+                 a) Error control(same message should be reached to receiver) 
+ 	  b) Flow Control (I shouldn;t full the buffer with data on network,, I should use some constraint or flow that  only this much data will be send at a time)
+                 c) Multiplexer and Demultiplexer --> 
+                                                  data should be send to which process is control by mux and demux
+ ii) Optional (It increase time complexity) --> 
+                a) Encryption/ Decrypiton 
+                b) CheckPoint (We are downloading data of 500 mb and lets say downloading gets failed at 200 mb , 
+                         now after getting network again it should start from 200mb again instead of starting from 0 mb again)
+
+All these Functionality will be defined in one model , There are one model like OSI and other is TC/Ip model
+Tc/Ip model 2 types .. 4 layer model and 5 layer model , It is implememntaed  model
+--->OSI model is standard model contains all functionality of CN. OSI model consist of many layer
+      a) Applocation layer
+      b) Presentation layer
+      c) Session layer
+      d) Transport layer
+     e) Network layer
+     f) Data link layer
+    g) physical layer
+ 
+  Physical layer is last layer from sender side but it is first layer from receiver side. (It send data in form of signal by conerting bit data into singal at physical layer)
+ 
+******** Topology --->  How the devices are connected to each other.
+                            1) Mesh Topolofy --> every system connected to each other 
+                                                      ---> It is robust,reliable as a failure in one cable will only disconnect the specified computer connected to this cable.
+                                                      ----> It provides security
+			           ----> point to point communication
+                            2) Star Topology(HUB) --->message always passes through hub before reaching to  receiver
+                                                              --> if hub got disconnected , System will stopped work
+ 	              			----> point to point communication
+                            3) Bus topology -----> Bus topology is a network topology in which all the nodes are connected to a single cable known as a central cable or bus.
+                                                     ----->   Less Secure 
+			           ----> multi point communication
+                             4) Ring topology ---> when we connect 2 end of bus topology, it'll become ring topology
+
+Manchester encoding:-
+1 represent as  Z and 0 represented as (ulta Z)
+
+
+
+                                                                            ***********************Various devices in CN********************************
+ 1) Cables (Physical layer)
+          ----> Baseband (In baseband only one signal at a time can transmit)
+          -----> Broadband(In broadband many signal can mtransmit parallely)
+
+               *******types of cable******************
+             i) Unshielded twisted pair cable (10 base T, 100 base T) -->10 denotes 10mbps && here t denotes max distance signal can travel 100m with full intensity after 100m intensity starts lower down.
+             ii) Coaxial Cable (10 base 2 & 10 base 5) ---> 10 denotes 10mbps & 2 denotes 200 meter ad 5 denotes 500m
+             iii) Fibre optics (100 base-fx)---> Signal travells with the speed of light  and fx denotes 2km distance
+
+
+2)Repeater (Physical layer)
+                 ------>Repeater is 2 port device ,forwardng(same msg forward to next cable) and No filtering(Can't filter the message) and collision domain. 
+                ----> Repeater used to regenerate the intensity of signal , lets say u r using 10 base T cable then after 100m , Intensity will start lower down for that we can use repeater at every 100m.
+               -----> Repeater regenerate the intensity doesn't mean it wil increatse the intensity from x to 2x but when intensity will lower down to less than x then repeater make its intensity to again x
+
+            
+3)Hubs (Physical layer)
+              ------> Hub is multiport repeater with extra functionality(it signals if any error is there ),forwardng(same msg forward to next cable) and No filtering(Can't filter the message) and collision domain. 
+
+4) Bridges (physical and data link layer)
+            --------> Bridges use to connect 2 LAN
+            --------> Forwarding
+            --------> Filtering (Filtering is used to decide whether signal should be passed through bridge or not if destination mac address and src mac addres lies on same side msg would not forwarded
+            --------> Bridges contains table where for every MAC address there is port assigned if 2 mac assigned to same port then msg will be filtered and no forwaded through bridge
+            Type of Bridges
+                  i) Static type (if we manually change mac then again we have to alter the  mac add in table) basically user fill table manually
+                  ii) Dynamic type --> In this type table filled automatically
+           --------> No coliision can be occured ( Bridges used buffer in it so it store packets then procesed then forward
+           --------> Bridges  Data unit Protocol ( In bridges there is tree not loop , so there is not any chances of packet to stuck in loop)
+5)Switches
+6)Routers (physical, data link layer and Network layer) 
+         ** IP address used in WAN while Mac address used in LAN 
+            Forwarding,Filtering,Flooding , also It contains routing table, No chances of collision , It has store nd buffer 
+7) gateway
+8) IDS
+9) Farewall
+10) Modem
+
+
+Unguided Media ---> How wifi/bluetooth/infrared/microwave/radio works ? How data shared in air? What is spectrum?
+
+
+**************************circuit Switching and Packet  Swithcing **********************************************************
+
+1) In circuit switching once connection build u can transfer data in contigous manner
+2) In packet switching it works in pipeline method i.e, first it store packets in buffer then start forwarding packets .
+   ********Packet Switching of 2 types **********
+          i) Datagram Switching--> Connectionless , No Reservation
+          ii)Virtual Circuit ----> Connection Oriented, Resesrvation
+
+ Data Link Layer -----> 
+It receives the data from the network layer and converts the data into data frames
+and then attaches the physical address to these frames which are sent to the
+physical layer.
+ i) Node to Node delivery(It deals all the controls at every node between src and destination)
+ ii) Flow  Control( Speed of forwarding msg should be reliable)
+ ii) Error COntrol( Error should be check at every  node between src and destination)
+ iv) Access Control (it allow only aceess to one node at a time) in a local area;
+
+
+
+

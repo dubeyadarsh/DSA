@@ -1,0 +1,11 @@
+Insertion Operation in Heap perform at only first leaf node
+Deletion Operation in Heap perform from top node and top node replaced by last leaf node .
+Heapify is best
+
+u can get leaf node from n/2 +1 to n
+
+Find median in a stream
+
+https://practice.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1#
+2 heap banao left me max heap and right me min heap
+median means --> middle of list if size of list is odd and iif size of list is even then sum of both middle element from the list.

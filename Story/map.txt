@@ -1,0 +1,31 @@
+LinkedHashMap used to store element on coming order wise
+map.putIfAbsent('one',1);  // one of the properties of map
+    *********Iteration in map**********
+1)     for(Map.Entry<String ,Integer>() e: map.entrySet()){
+           System.out.print(e.getKey() or e.getValue());'
+        }
+
+2)  for(String key:map.keySet()){
+     System.out.println(key);
+     }
+3) for(String key:map.values()){
+     System.out.println(key);
+     }
+ ** All operation in hashmap perform in 0(1)
+In TreeMap it store all value in Binary Search Tree so it store all values in sorted manner
+  ** All operation in hashmap perform in 0(logn)
+
+
+ map.put(ch,map.getOrDefault(ch,0)+1);
+
+
+ ***************************Internal Working of HashMap<>****************
+     1) It utilises concept of Hashing... Hashing is function which generate some output for corresponding 
+        input in O(1) .
+         *) While creating hash function u have to keep in mind that time complexity of function must be O(1)
+           Eg of Hash Function:- 
+                           i) For large Key -> h(key)=key%m;
+                           ii) for String keys :- Weighted Sum  "cat" /"Act"
+                                                         h(key)=(s[0]*x^0+s[1]*x^1+........)
+                           iii) for object 
+                                     weighted sum of element of objects.Basically it derivied from above given hash function

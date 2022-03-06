@@ -1,0 +1,17 @@
+1.title hacking trips
+2.prompt adarsh#hacker $G
+3. | clip
+4.help color 
+5. color 
+##** You can't create a folder named as ox, con
+6.md con
+7.wmic product get name
+8.telnet towel.blinkenlights.nl  ***(use to watch star war movies)
+9.wmic memphysical get maxcapacity
+MaxCapacity
+netstat -aon
+
+
+
+resmon.exe in run
+services.msc in run

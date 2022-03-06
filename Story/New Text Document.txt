@@ -1,0 +1,3 @@
+  Collection Frame work consist of  collection interface and map and iterable
+ Collection Interface contains List, Set ,Queue
+  Stack implements using list

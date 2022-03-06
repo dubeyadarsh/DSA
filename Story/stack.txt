@@ -1,0 +1,17 @@
+https://youtu.be/_RtghJnM1Qo 
+  importatnt questionon stack
+
+When to use monotonic stack:-
+	For greater problems, use a monotonically increasing stack (from top to 		bottom).
+	For smaller problems, use a monotonically decreasing stack (from top to 	bottom).
+	For next problems, backwardly iterate through the list and push elements into 	the stack.
+	For previous problems, forwardly iterate through the list.
+	For problems with a circular list, iterate through the list twice.
+
+   ******* One concept of using monotonic stack is " - a +"  - means pop a means answer + means add .
+
+
+When to use monotonic queu?
+ 	Monotonic queues are very useful in problems where we want to find the 	greater/min/max till a particular window
+
+****if there is a limit on a length and then a maximum / minimum value is required, it *****(should be a monotonic queue. If there is a feeling of seeking "nearest", it should ******be monotonous stack.*******************

@@ -1,0 +1,20 @@
+1. To caculate sum of vowels in all substring of string.. You'll need array preprocessing where at 
+every index of array it stores number of substing that contains character at that particular index.
+
+ static int vowel_calc(String s)
+    {
+        int n = s.length();
+        int arr[] = new int[n];
+ 
+        for (int i = 0; i < n; i++) {
+ 
+            if (i == 0)
+                // No. of occurrences of 0th character
+                // in all the substrings
+                arr[i] = n;
+ 
+            else
+                // No. of occurrences of ith character
+                // in all the substrings
+                arr[i] = (n - i) + arr[i - 1] - i;
+        }

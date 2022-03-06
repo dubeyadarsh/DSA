@@ -1,0 +1,2 @@
+1) Searching element in HashSet takes O(1)
+while Searching element in LinkedList or any other List takes O(n)

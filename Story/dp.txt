@@ -1,0 +1,9 @@
+1) for subarray u always think about array prefix or array preprocessing
+2) Sometimes last row of dp table becomes the ans
+3) longest repeating subsequence ---> find lcs of string with itself keep 1 condition in mind that lcs shouldn't be at same index.
+
+Gap strategy -> diagonal traversal 
+			  for(int g=0;g<n;g++){
+			           for(int i=0, j=g;j<n;i++,j++){
+gap strtagey used in optimal strategy for game . bnecoz we uysed 2 pointer there and untill i<j  we keep record that's why in dp we need gap strategy here 
+for the alternate picking element there might beuse of gap strategy 

@@ -1,0 +1,20 @@
+Request-Response Cycle -->
+                        when we press any url ..browser send request to particular server ...now that server response 
+                         and send html file .. Now browser parsed the html file into some UI 
+                        Format and display it into browser.
+Web Scrapping--> U get the html file and now u'll parse the html file and u'll extract some feature or content fo
+                             from html file and will store in some organised form like csv.pdf,or we can store it into DB.
+
+                             Cheerio module is there in node js used for web scrapping(to organise the data);
+                             To store organised data we'll use some extra module like for excel xlsx is there
+
+CSS Selector---> (examples)
+1)Element Selector(p)
+2)Descendent selector (div p { })
+3) Children Selector (div>span>p) 
+
+
+
+You can scrap only loaded content from website that means whatever is visible on screen only that data u can scrape
+hasclass and find is most usable class in web scraping
+.find("a").attr("href")

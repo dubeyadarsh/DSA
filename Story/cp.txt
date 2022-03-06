@@ -1,0 +1,15 @@
+prime number- run for loop from 2 to squareroot to the number and then divide the number from every number bewtween for loop if it is divisible by any numbr in between then it is not prime number
+
+if overall time is given 1 sec then only 10^7 limit tak opearation perofrm ho skte hai so if u use any algorithm wi which constrain is lesss than or equal to 10^7 then u can use o(n) algo but if if constraint is more than 10^7 then u can't apply o(n)
+
+
+when u used ++i and i++ in for loop , there is nothing difference but when u do operation there will make difference
+E.g =>
+   a=11
+   sysout(11+ (a++)) = 22
+   systout(11+(++a)) == 23
+
+Math.log(n)/Math.log(r) where r is base of log ;
+Bit wale question k liye 1 to 9 ka bit likh liya karo
+ 
+unit placsdbe se 0 1 01 karke likhte hai tens place se 00 11 00 11 karke hundreds place se 0000 1111 0000 1111 karke likte ha... for more info see image- cp_bit in this folder 

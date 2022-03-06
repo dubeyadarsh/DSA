@@ -1,0 +1,29 @@
+(a+b)%m=(a%m+b%m)%m
+(a*b)%m=(a%m*b%m)%m
+(a-b)%m=((a%m)-(b%m) +m)%m
+(a/b)%m ==??
+	(a/b)%m=((a%m)**(b^-1%m))%m
+		we have to find (b^-1)%m modulo multiplicative inverse of b
+		We can find mmi if and only if b and m both are co prime that is (gcd(b,m)==1)
+		MMI defined as IF (a*b)%m=1 then b is mmi of a.
+				((a%m)*(b%m))%m=1
+				So Naive way to find mmi run loop from 1 to m-1 becoz b belongs to:				[1,m-1], so from 1 to m-1 if any value satisfy above  condition we can 				get mmi of a.
+
+				Optimised approach from Fermett theorem
+				a^m-1=1 mod m it signifies if we divide a^m-1 by mod we get 				remainder as 1
+
+
+				Finally (a^-1) %m = binaryexponentiation(a,m-2) this is mmi
+
+				Binaryexponentiation(int a,int b){
+ 					long long res = 1;
+					    while (b > 0) {
+						        if (b & 1)
+						            	        res = res * a;
+							        a = a * a;
+							        b >>= 1;
+    						        }
+    					return res;
+					}
+
+

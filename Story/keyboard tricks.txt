@@ -1,0 +1,8 @@
+1. Windows +v to see clipboard history
+2.Windows + right arrow
+3.Windows + 1 or 2 or 3
+4. Windows +D
+5. ctrl + backspace to delete whole word
+6.  Windows+ tab or  alt + tab
+7.press home then shift + end key to select whole line
+8. wind +l to lock the system

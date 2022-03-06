@@ -1,0 +1,42 @@
+Sometime u need to create array of size of constraint 
+2104. Sum of Subarray Ranges
+monotonic stack and queues then their application in sliding window
+Next Greater Element Problem
+1.   For Graph --->
+                          i> Dijkstra  (greedy)  done
+                          ii> Topological
+	           ii> spanning    --- > prims , kruruskals (greedy) 
+                          iv) negative cycle --> bellman and floyd warshalls 
+2.PriorityQueue Implementation
+3. number thoery
+4. 10^8 rule by anuj
+5. Implement some code for generic class like using one code that can work for either string ,long or int.
+6.contribution on leetcode
+7. Which Sorting Algorithm is best and why ? and which sorting algo will be best folr linkedlist?
+8. Sliding Window Maximum
+9.Union Find
+10) Find kth element of 2 sorted array using binary  search technique
+11) Big Integer in Java
+12) KMP and Rabin Karp
+13) How website works ? get and post ? how data shared from post method
+14) Contest me mostly prefix sum,Sliding Window, HashMap,Binary Seach and many small topic like these
+   mese questions aate hai ... Kindly before going to give coding roundmake sure to solve these problems;
+
+******************** Canarybuild browser is night build version of chrome while chromium is open souirce version of  chrome
+        
+*****************************************************************************************
+                                  You can't create array of size more than 10^8 becoz in contest we always have memory limit of 256mb
+                                  You can't create array of size more than 10^6 in a function 
+******************************************************************************************
+
+ *********************Eulerian Circuit nd Eulerian Path *****************************
+   For Undirected Graph--->
+                                 if degree(no of connected edges to particular vertex ) of every vertex is even then it contains eulerian circuit
+                                 if degree of all vertex is even except two vertex(i.e, if degree of aany 2 vertex is odd) then there is eulerian path
+  For Directed  Graph --->
+                                 if indegree == outdegree then it contains eulerian circuit
+                                 if indegree==outdegree except 2 vertex then there is eulerian path
+                                          ---> i) for 2 vertex
+                                                       indegree=outdegree+1;
+                                                       outdegree=indegree+1;
+     ######## Application of eulerian circuit is to find circle of string ---> GFG question circle of string

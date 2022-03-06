@@ -1,0 +1,5 @@
+arraydeque.offer(12);
+arraydeque.offerFirst(25) // add at first position
+arraydequeue.offerLast(45)//add at last
+     $## Output---->
+                                25 ,12, 45

@@ -1,0 +1,83 @@
+which of given two number is greater?
+15/16 , 9/10
+
+15         9
+----  [  ] ----
+16        10
+
+Do cross multiply
+15 X 10 [ ] 16 X 9
+150 [ ] 144 
+
+Here u got 150 > 144 so 15/16 is greater than 9/10
+
+******************************************
+%Change= (Final value- Initial value)
+	 --------------------------------------  X 100
+	         Initial Value
+
+****************************************
+
+A*B=C
+IF A is increased by 20% then how much % B should decrease so that c should not change.
+
+so A is incraesed by 20/100 ----> i.e, 1/5 so trick is B is going to decraese by 1/6 i.e, B is going to decrease by 16.67%. and vice versa
+
+*******************************************
+
+Successive percentage change
+   -16.67%     20%
+A------------>B---->?
+
+% change from A to C is  =>a+b+(a*b)/100; where a is -16.67 and b=20.
+
+************************************** 
+
+C.P.=SP. (+ -) PROFIT
+
+Profit %= S.P.-C.P.
+	----------- X 100
+	C.P.
+**************************************
+
+Alternative method to find Average 
+80,90,30,60
+step 1-> COnsider a base value and find out deviation for all value from this considered value.
+ let's say i consider number as 60
+ So deviation are 60-80,60-90,60-30,60-60
+		-20,-30,30,0
+Step 2- find out average for above deviated values->
+		(-20+30-30)/30=-20
+step-3 - Now add output of step 3 to base value that we considered in step 1
+		60-20=40 
+	So our final ans is 40 //
+
+Question-> 20 student from 1 college scored avg marks of 25 and 30 student from another college scored avg of 20 marks now if both these college comes under an university
+	 now caluclate avg marks of all student in university;
+	avg=Total/no of elements
+	Total from clg 1 is= 20*25=500
+	Total from clg 2 is =30*20=600
+	Ultimate total is =500+600=1100
+	Number of student here is =30+20=50
+
+	So,now ultimate avg is =1100/50=22  //Ans
+
+This is called as weighted avg.
+	weighted avg= (X1Y1+X2Y2+X3Y3....XnYn)/(Y1+Y2+Y3...+Yn) where Xi is quality of elemnt or seperate avg of 1 cluster, Yi is  quantity of elements or number of element .
+
+
+When there are series of number having constant ommon difference between them
+	i) If total number of element is odd then average of series would be middle number of series.
+	ii) IF number of element is even the average of series would be average of both middle number of series,
+**************************************
+Partnership
+ A:B : : 50000:20000 => initial investment-> 70000
+		     after 1 year total profit is= 140000
+			then percentage of profit for A is: 140000*5/7 and for B IS 140000*2/7
+
+Case 2 is:-->
+when A start alone and invest 10000 after 3 month B also joins him ans invest 5000 tell how much ratio of A and B is in buisness?
+ A1*T1 : A2*T2  After 1 year t1 will be 12 and here t2 will not be  3 t2 will be 9 so ans will be 10000*12:5000*9 ==> 8:3
+
+case 3: when A and B start with investment 50000:20000 after 3 month b want to increase amount by 20000 so ratio will be change here and that will be
+          after 1 year   50000*12:20000*12+20000*9 so ratio will be 5:3.5

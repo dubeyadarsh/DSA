@@ -1,0 +1,16 @@
+when there is case that for every position u want try every element .then  there 
+is chance of for loop...(Unbouded knapsack me for loo[p chahiye , 01 Knapsack me for loop nah chahiye)_
+e.g,
+Combination sum
+    {2,2,3} target 7
+
+        if(target < 0)
+            return;
+        if(target == 0)
+             result.add(new ArrayList(list));
+			 
+        for(int i = start; i < cand.length; i++ ) {
+            list.add(cand[i]);
+            backtrack(cand, i, target - cand[i], list, result);
+            list.remove(list.size() - 1);
+           }

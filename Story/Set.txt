@@ -1,0 +1,6 @@
+Set<Integer> set=new HashSet<>();  ----> It arrange element in random order 
+Set<Integer> set=new LinkedHashSet<>(); ---> It arrange element in linked order that mean when u print the element it will give output in same manner u added the element 
+Set<Integer> set=new TreeSet<>(); ---> It arrange element in sorted order
+
+    ***************************
+Instead of Integer if u give generic class as non - premetive  Set won't work in that case.

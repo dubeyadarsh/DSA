@@ -1,0 +1,3 @@
+Array preprocessing means using extra space that means u use some auxilarry
+array or any list to store value of particular index
+best example --> Trapping rain water 

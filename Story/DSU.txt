@@ -1,0 +1,18 @@
+
+                                           ************** Disjoint Set Union************** 
+***Similar bando ki pair de rakhi hai , iin pairo ko dekh k similar bando ki grouping karne ki kriya ko DSu kahte hai **
+
+(1,5) (2,3) (3,4) (5,6) ----> ye hai pairs, max value hai 6 
+
+Algorithm -->
+      1) sab Pairo me  jiski bhi value max rhegi us size ka array banao aur array ko uske index k sath initialize kar do jiska matlab ye hua ki 
+         sab bando ka alag alag group hai aur wo har grp k wo khud leader hai(Noted---> This is only initial condition)
+
+      Now here,,,,, Union and Find method comes in Picture
+                             Union --> Merge function of 2 grp
+                             find --> Use to find leader
+
+     First Simply Implement the DSU
+     Now,Optimise-->
+                        1) Optimise by path Compression on Find Method
+                        2) Optimise by rank (depth of chain)

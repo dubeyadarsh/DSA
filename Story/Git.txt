@@ -1,0 +1,40 @@
+git config --global user.name "adarsh kumar dubey"
+git config --global user.email  "adarsh2dubey@gmail.com"
+git config --global --edit    after this press (esc colon wq) to exit
+git init ----> it initialises git in the folder
+git status  ---> check how many changes u did
+git add filename ---> used to place file in staging area
+                                --> staging area means u r going to commit this file but have'nt been commited yet 
+git commit -m "message"
+git log ---> to check how many commit u did
+
+git add . ---> all files will comes in staging Area
+git checkout hashcode --> all the recent commited will delete and head will start
+                                        pointing to particular hash commit
+git checkout master ---> undo all checkouts
+git checkout "branch" ---> Use to switch the branch
+
+************->>Now, the reason you wouldn't have a master branch even after doing a git init is that there are no commits:
+                     when you create your first commit, you will then have a master branch. 
+
+git branch "name" to create new branch
+git checkout -b <branch name>
+
+git branch -d "branch name"to delete the branch
+git branch ---> to show all the branches
+
+git merge branchname ----> this branch will merge to parent branch
+
+touch .gitignore --- this used to keep some file secret that doesn't reflect on github
+git remote -v
+git remote add origin "link" use to add remote for your project
+
+git push -u origin "other branch name" --> to add other branches on github
+
+On Github Fork is used to contribute in open source
+
+git clone <repolink> useto clone git repo
+
+vim is used to edit file in command prompt after cloning repo from github
+
+cat <filename> ----> used to check what change u made in this file

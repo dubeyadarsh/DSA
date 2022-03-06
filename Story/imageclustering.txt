@@ -1,0 +1,3 @@
+                                Deep learning
+ 1) VGG16 neural network module -- Feature extractor from images
+ 2)

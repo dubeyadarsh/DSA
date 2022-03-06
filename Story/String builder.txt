@@ -1,0 +1,8 @@
+
+        StringBuilder sb = new StringBuilder(s);
+        
+
+        u can add element at any index in string using sb.insert(index,value);
+
+	It has inbuilt function to reverse the String
+	.reverse();

@@ -1,0 +1,15 @@
+                                                                               *************  Huffman Coding *********************
+
+
+ 1)Fixed length encoding . ----> every Character has 1 byte size and every 1 byte has 8 bit .. Now, Scenario is let's say i have to send "aaabbbcccc" only this message
+                                                          it contains only 3 different character and if we use only 3 byte system then again we can send this message simply,
+                                                             2^0 =1 only 1 character can be send
+                                                              2^1=2 only 2 different type of character can be send using 1 bit( 1 character represent 0 and other represent 1)
+                                                              2^2 =4 only 43 differet type of character can be send ... 00,01,10,11
+                                                          Now in our case if we use only 2 bit system even we can send the mesage easily
+                                                          So instead of using 8 bit type for every character, here we use obnly 2 bit tyoe character thar's what Fixed length  EnCoding is !!!!!!!!!!
+
+
+2) Hudffman is Variable length coding that means for every character we will decide our different code based on frequency using binary tree !!!!!!!!!!!!!!!!
+    Merge those 2 node which has lesser frequency again do this till u covered every frequent element;
+    Every single code wouldn't be prefix of any other code of any character.. to clear doubt u should watch Coding Ninja Video

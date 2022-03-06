@@ -1,0 +1,80 @@
+Code of print binary representation of number :::---->>
+			 //aap kisi bhi number k binary ko agar 5 baar right shift karte ho aur phir 1 se &
+			  //karte ho to wo particular index pe konsa bit tha wo return karta hai 
+			for(int i=10;i>=0;i--){
+			Sysout( (num>>i)&1);
+			}
+
+
+
+## size of int in java is 4 bit and long is 8 bit
+1)  a & 1==0 ?"even":"odd";
+2) Number is multiplied by 2 if we perform  left bitwise operator.
+3) Number divides by 2 if we perfrom right bitwise operation
+4)
+    // if (x == a) x = b; equivalent to   x = a ^ b ^ x;
+5)  int min = (y ^ (x ^ y) & -(x < y));
+    int max = (x ^ (x ^ y) & -(x < y));
+6)swapping
+// Swap a with b
+	a ^= b;
+	b ^= a;
+	a ^= b;
+7) 1 >> x  ----> it is equal to 2^x
+#Values before 2^x contains all 1s e.g, 3 is before 4 and binary representation of 3 is 0011
+
+##LSB and MSB(Least and Most Significant bit)
+  Rightmost bit is LSB and Leftmost bit is MSB;
+
+## Set and unset Bit--->
+ 		1 stands for set bit while 0 means unset bit.
+		Code to make ith bit set::::
+				print(a|1<<i));
+		
+				print(a&(~(1<<i));
+
+##If  u have to check whether a particular index in binary representation  is set bit or unset bit then u have to do following operation 
+ e.g, Let's say we have to check this binary repres.(0110) has set bit at 1st index ?  
+  
+	Solution:- (i)  Form another binary repres that has only 1 at that index where  
+                                 we have to check. In our question we have to check at 1st , so formed binary will be 0010 
+				** In code part we can d0 (i<<i) it will form binary repres that only has 1 at ith index.
+
+		(ii) Now do & operation with formed binary 
+			(110 & 0010) if this comes 1 then it has been proved at index 1 there is set bit
+
+ 
+
+
+
+8) Swap even and odd bit
+   ----------> TO swap even and odd bit first we will need  2 mask
+                i'll do & operation with mask(having 1 at even index i.e, evenmask 101010) to preserve value at even index
+                again ill preserve value at odd index by doing mask(having 1 at odd index i.e, 010101) 
+                then do right shift of preserved  value at even index then do left shift of preserved value at odd index 
+               Now do oroperation b/w these two preserve .. u have you ans.
+               Hint:- Even mask = 0xAAAAAAAA
+                        Odd mask= 0x55555555 ( 5 is 8 times becoz already 5 contains 4 bit doing it 8 times it will become 32 bit  and in our ans constrain int limit is 32bit)           
+
+                             public static int swapBits(int n) 
+                  {
+	   int evemask=0xAAAAAAAA;
+	   int oddmask=0x55555555;
+	  int pe= n&evemask;
+	  int po=n&oddmask;
+	  pe=pe>>1;
+	  po=po<<1;
+	  return pe | po;
+	}   
+
+Let me explain you something, which you may want to know.
+
+0xAAAAAAAA - 32 bit number with all even set bits
+
+0x55555555 - 32 bit number with all odd set bits
+
+
+Watch pepcoding if u have doubt
+
+
+

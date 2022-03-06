@@ -1,0 +1,54 @@
+In sliding window loops run n-k+1 times.
+
+Leetcode Problems
+1248. Count Number of Nice Subarrays
+
+Exactly K times = at most K times - at most K - 1 times
+public int numberOfSubarrays(int[] A, int k) {
+        return atMost(A, k) - atMost(A, k - 1);
+    }
+
+ public int atMost(int[] A, int k) {
+        int res = 0, i = 0, n = A.length;
+        for (int j = 0; j < n; j++) {
+            k -= A[j] % 2;
+            while (k < 0)
+                k += A[i++] % 2;
+            res += j - i + 1;
+// yaha pe j-i+1 ka matlab jth index pe khatam hone wale kitne subarrays honge
+        }
+        return res;
+    }
+Some problem on Sliding Window:-----
+Number of Substrings Containing All Three Characters(Its solution is one of best solution on leetcode)
+Count Number of Nice Subarrays
+Replace the Substring for Balanced String
+Max Consecutive Ones III
+Binary Subarrays With Sum
+Subarrays with K Different Integers
+Fruit Into Baskets
+Shortest Subarray with Sum at Least K
+Minimum Size Subarray Sum
+ number of subarrays with sum k
+Number of Subarrays with Bounded Maximum
+
+		class Solution {
+   		 public int numSubarrayBoundedMax(int[] nums, int left, int right) {
+    		    return count(nums, right) - count(nums, left - 1);
+   		 }
+   		 int count(int[] nums, int bound) {
+   		     int ans = 0, cnt = 0;
+    		    for (int x : nums) {
+       		     cnt = x <= bound ? cnt + 1 : 0;
+      				      ans += cnt;
+     		   }
+     		   return ans;
+ 		  }
+		}
+Subarray Product Less Than K
+
+
+
+My personal feedback after 15 sliding window type of questions is that basically you need to figure out if this problem can be solved using the sliding window code template. The keyword you might want to pay attention to is something like subarray/substring with at most/least K different numbers/letters. Then if the question is asking for a subarray/substring with exact K different numbers/letters, that's where the strategy from 992 could be applied to.
+
+If you didn't know the trick introduced by this post (https://leetcode.com/problems/subarrays-with-k-different-integers/discuss/523136/JavaC%2B%2BPython-Sliding-Window), that's also fine. But I have to say this is really brilliant and save you a lot of time on debugging.

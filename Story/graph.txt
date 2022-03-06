@@ -1,0 +1,71 @@
+rm*wa* in bfs (read,mark if not visited,write add if not already added)
+1) Logic of checking cycle in directed graph won't be same as in undirected graph...
+   i) UnDirected Graph
+                  ---> Bfs approach using queue (If u get any visited node in queue that means there is cycle because 
+                                                                      we are calling only unvisited neighbours and still if we found in our
+                                                                      neighbour that it is visited then we'll must say it is cyclic)
+                  ---> Dfs approach  (it goes in straight and still if it founds any neighbour node is visited and
+                                                that is not his parent that means definetely any cycle is there )
+                                ---> In recursion approach we'll be needing  parent variable
+                                --> In stack(iterative) approach we wouldn't need parent variable  
+                ----> Union Find approach(If both element of pairs belong to same subset or contains same leader that mean there is cycle)
+  ii) Directed Graph 
+                  ---> Bfs approach(reverse of topological sorting):
+				After getting stack opf topological sort , store all element of stack in the map . like first element is popped then it will be worked as a key in map
+				 and u can put 0 as a value now when u pop 2nd element u can put value as 1 in map. niow traverse the graph :-
+				 for(int i = 0; i < n; i++)
+				    {
+				        for(Integer it : adj.get(i))
+				        {
+		             
+							            // If parent vertex
+							            // does not appear first
+  						          if (map.get(i) >map.get(it))
+           							 {
+                 
+    						            // Cycle exists
+						                return true;
+     							     }
+   				     }
+			             }
+ 
+                  ---> Dfs approach 
+ 			----> In Recursive approach we need 2 boolean array because for every one call if we get 
+                                                               visited node and that node also visited globally that means cycle is present there)
+ 			-----> In iterative approach:-
+
+  
+  **point to be strictly noted --->
+         In directed graph if it contains any undirected edge then 
+         it must be cyclic and directed graph. that's why logic of 
+         checking cycle in directed and undirected is different.
+
+## Shortest path in term of edges will be bfs traversal
+## Shoretst path in term of weight wil be dijkstra algorithm
+
+Topological Sorting --> 
+                    This is permutation of the direct acyclic graph in which for every edge u to v ,u comes before v in topologcal sorting.
+            Application:-
+                          If in question vth work depend on uth work then we must complete uth work before initiating vth work so in such cases if we reverse the topological sorting we 
+                          get the answer.
+           i) Kahn's Algorithm --> Find indegree of every edge , push element in queue if indegree is 0 and remove edges of pushed node in queue from their neighbors .(Using bfs)
+           ii) Using dfs --> apply dfs and for every node if dfs call is over store into stack in this way after finishing every dfs call we will be having toplogical 
+                                  traversal in stack.
+ Dijkstra algorithm: 
+		 ye jitne bhi possible path rhte particular vetrex k , unko prioirty queue me dalta hai then , priority queue se pop hone k baad visited mark hoga koi vertex usse pehle jitne bhi possible path rhege wo priority queue me dal chuke honge 
+
+KosaRaju Algorithm:-
+ 		this algorithm used to find out the strongly connected component in graph.
+		It consist of 3 steps
+		i) Find topo sort
+ 		II) do transpose of graph 
+		iii) start dfs on the basis of finishing time
+
+
+Bellman Ford-->
+		Drawbacks of Dijkstra--> Dijkstra is greedy algorithm it will failed where greddy fails;
+				         For negative weight edge it gives wrong ans
+									   A
+								            3/    \5
+								          B------- C  (BC=-3) WHEN U USE DIJKSTRA U WILL GET ANS FOR A IS 0 AND ANS FOR B IS 3 AND 										      ANS FOR C IS 5 BUT ANS FOR B SHOULD BE 2 THAT'S WHY DIJKSTRA BECOMES 										FAILED
+Bellman ford use to detect negative weight cycle in graph

@@ -1,0 +1,36 @@
+First merge String with patter
+str'=pat#txt
+now find lps of str' and if any lps index contains value is equal to size of pattern 
+then there is matching
+First we need to generate all lps(longest pure prefix and suffix)
+    ---> 
+                           class Solution {
+                                  int lps(String s) {
+		        int n=s.length();
+		        int lps[]=new int[n];
+		        int len=0; // len vairbale is keeping value of lps for its prevoius index like for index 1 len is 0 becoz 
+                                                     //for index 0 there \is not any lps
+		        int i=1;
+		        while(i<n){
+ 			// If one char is going to add in previous lps and this char is equal to s.charAt(len) then we can increase size of len
+		            if(s.charAt(i)==s.charAt(len)){
+		                len++;
+		                lps[i]=len;
+		                i++;
+		            }
+		            else {
+		                if(len>0){
+		                len=lps[len-1];
+		                 }
+		                 else{ 
+		                     lps[i]=0;
+ 		                    i++;
+		                 }
+		              }
+		           }
+                            return lps[n-1];
+                           }
+                       }
+
+
+***Still Confusing Watch Pepcoding Video of KMP

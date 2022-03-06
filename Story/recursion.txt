@@ -1,0 +1,28 @@
+Recursion consist of 3 main rules i.e, 2 mandatory rule nd 1 optional rule
+i) Base case **
+ii)Recursive call **
+iii) work  (optional)
+*** masters algorithm ****
+ time complexity using master's theorem
+  t(N)=at(n/b)+f(n^c)
+  if( loga base b) ==c O(n^clogn)
+  if( loga base b) >c O(n^loga base b)
+  if( loga base b) <c O(f(n))
+\
+trick -1:- **
+time complexity of whole recursive function=jitni time call ho ra function * time complexity of one recursive call function
+trick -all:-**
+agar recursive function k andar ka argument  devide hoke call ho rha to logirthmic lagega
+agar 1 function me 2 recursive call hai to ---->
+                                         i) agar argument divide hoke call hore to logirthmic
+                                         ii) agar argument add or subtract hoke call hore to exponential
+
+\
+tail Recursion :-  The method executes all the statements before jumping into the next recursive call 
+head Recursion :- If the recursive call occurs at the beginning of a method, it is called a head recursion
+    *** Tail ***       |    *** Head ***
+  void count(int n){   |     void count(int n){
+   if(n==0) return ;   |    if(n==0) return ;
+   print(n);           |      count(n-1);
+    count(n-1);        |       print(n);
+   }                   |       }

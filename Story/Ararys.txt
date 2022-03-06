@@ -1,0 +1,17 @@
+Arrays.binarySearch(arrays,number)
+Arrays.sort()
+Arrays.fill()
+   **************************Collections*************
+1) Collections.min(list)
+2) Collections.max(list)
+3) Collections.frequency(list,number)
+
+***comparable****
+Collections.sort(array, (o1,o2)->01.compareTo(02));  /// here o1 and o2 are String;
+U can't play own type of comparator in primitive class 
+
+*********Circular Array ******
+In circuclar Array next element always is (i+1)%n and prev element always is (i-1+n)%n
+Whenever u get circular array just run the loop 2*n times or concat array to itself.
+Prefix sum and difference array method
+https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/

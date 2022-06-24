@@ -4,3 +4,11 @@
 
 
 // P.S.: Same logic will not valid to find longest pallindromic substring.
+// For example, S = "abacdfgdcaba", S'
+// = "abacdgfdcaba".
+
+// The longest common substring between S and S'
+//  is "abacd". Clearly, this is not a valid palindrome.
+
+
+

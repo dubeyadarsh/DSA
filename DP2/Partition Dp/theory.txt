@@ -1,0 +1,20 @@
+// In this type of problem
+// hum har index pe partition karte hau aur left and right half me divide karke solve karte hai
+// jis bhi partition per optimised answer aata hai hum wo return karte hai
+// for e.g, Matrix chain multiplication me number of operation = n*m*p hota hai jahan pe n*m is size of 1st matrix and m*p is the size of 2nd matrix.
+
+
+Rules to appraoch->
+1) Start with entire block/array -> f(i,j) initially i will be at 0 and j will be at size-1
+2)Try all partition 
+            -> By running a loop
+3) Return the best possible 2 partition.
+
+For Matrix chain multiplication->
+[10,20,30,40,50]
+start from i=1, and j=4
+run a loop from (k=i to j-1) and do the partition at every k .
+why j-1? because we are doing partition i.e, we are making left and right and if we do partition at j i.e, end of array then there will not 
+remain any right portion.
+After getting answer from evry partition return minimum ans.
+

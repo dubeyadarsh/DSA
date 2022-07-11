@@ -5,6 +5,7 @@
 // Integers in each column are sorted in ascending from top to bottom.
 
 
+https://assets.leetcode.com/uploads/2020/11/24/searchgrid2.jpg
 
 
 class Solution {

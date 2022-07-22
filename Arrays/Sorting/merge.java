@@ -11,11 +11,11 @@ class Codechef
 	{
 		// your code goes her
 		int arre[]= {12, 11, 13, 5, 6,34,43,12,15,43,3,5,6,7,8,12,34,87};
-		insertion(arre);
+		mergii(arre);
 		for(int p:arre) System.out.print(p+" ");
 		
 	}
-	static void insertion(int arre[]){
+	static void mergii(int arre[]){
 	 int n=arre.length;
 	 sort(arre,0,n-1);
 	 

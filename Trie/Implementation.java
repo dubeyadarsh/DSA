@@ -62,7 +62,7 @@ class Trie{
             if(node.child[word.charAt(depth)==null) return node;// ye line maine khud se add ki hai shayad kuchh case me usage na ho
         node.child[word.charAt(depth)-'A']=removeUtil(node.child[word.charAt(depth)-'A'],word,depth+1);
         // BACKTRACK
-        //         YE DEKH RAHA KI AGAR NEECHE KOI CHILDREN NAHI HAI PLUS MAI TERMINAL NAHI HOON TO MERA IS TREE ME RAH K FAYDA THATS'SWHY 
+        //         YE DEKH RAHA KI AGAR NEECHE KOI CHILDREN NAHI HAI PLUS MAI TERMINAL NAHI HOON TO MERA IS TREE ME RAH K FAYDA NAHI THATS'SWHY 
         // AT TIME OF BACKTRACKING WE ARE MAKING IT NULL
         if(isEmpty(node) && !node.isTerminal) return null;
         return root;

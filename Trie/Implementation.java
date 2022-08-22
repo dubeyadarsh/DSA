@@ -52,14 +52,18 @@ class Trie{
     
     TrieNode removeUtil(TrieNode node,String word,int depth){
         if(node==null) return null;
+    
         if(depth==word.length()-1){
+              if(node.child[word.charAt(depth)==null) return node;// ye line maine khud se add ki hai shayad kuchh case me usage na ho
             if(node.isTerminal) node.isTerminal=false;
             if(isEmpty(node)) return null;
             return node;
         }
-        
+            if(node.child[word.charAt(depth)==null) return node;// ye line maine khud se add ki hai shayad kuchh case me usage na ho
         node.child[word.charAt(depth)-'A']=removeUtil(node.child[word.charAt(depth)-'A'],word,depth+1);
-        
+        // BACKTRACK
+        //         YE DEKH RAHA KI AGAR NEECHE KOI CHILDREN NAHI HAI PLUS MAI TERMINAL NAHI HOON TO MERA IS TREE ME RAH K FAYDA THATS'SWHY 
+        // AT TIME OF BACKTRACKING WE ARE MAKING IT NULL
         if(isEmpty(node) && !node.isTerminal) return null;
         return root;
         

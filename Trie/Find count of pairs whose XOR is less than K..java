@@ -25,8 +25,8 @@ class Code
 		root=new Trie();
 		int ans=0;
 		for(int p:a){
-		    //jo already inserted value hai unke sath pair banane
-		  //  ka try kara aur check kara ki kitne pair possible hai
+		    //I'm trying to find the number which are already inserted and can be included in my answer.
+		    // Those number who will have xor less than k  with my current number,  will be included in answer. 
 		    ans+=count(root,p,k);
       
 		    insert(root,p);
